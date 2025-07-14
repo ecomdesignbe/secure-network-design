@@ -33,7 +33,7 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 ```
 secure-network-design/
 │
-├── documentation/ # Rapport technique & budget
+├── documentation/ # Rapport technique & budget || Technical report & budget
 │ ├── client_requirements.md
 │ ├── network_plan.md
 │ ├── server_configurations.md
@@ -41,17 +41,17 @@ secure-network-design/
 │ ├── budget_estimate.md
 │ └── project_report.pdf
 │
-├── simulation/ # Fichiers GNS3 / Packet Tracer
+├── simulation/ # Fichiers GNS3 || GNS3 File
 │ ├── final_project.gns3
 │ ├── topology_diagram.png
 │ └── captures/
 │ └── *.png
 │
-├── slides/ # Présentation finale
+├── slides/ # Présentation finale || Final presentation
 │ ├── presentation_source.pptx
 │ └── presentation.pdf
 │
-├── config_samples/ # Extraits de configuration CLI
+├── config_samples/ # Extraits de configuration CLI || CLI configuration snippets
 │ ├── switch_vlan_config.txt
 │ ├── radius_config.txt
 │ └── dns_config.txt
@@ -61,7 +61,7 @@ secure-network-design/
 │
 ├── .gitignore
 ├── README.md
-├── LICENSE (optionnel)
+├── LICENSE 
 └── CHANGELOG.md
 ```
 
@@ -91,7 +91,7 @@ secure-network-design/
 ## 📝 Livrables / Deliverables
 
 - Rapport technique PDF (plan IP, services, sécurité, budget)
-- Fichier de simulation GNS3/PT
+- Fichier de simulation GNS3
 - Présentation client (PDF + source)
 - Fichiers de configuration extraits
 - Captures d’écran annotées
