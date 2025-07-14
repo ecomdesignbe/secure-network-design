@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="./assets/network-topology.jpg" alt="Network Topology" width="700"/>
+</p>
+
+
 # 🛡️ Secure Network Design / Conception d’un réseau sécurisé
 
 Projet réalisé dans le cadre d’un challenge réseau de 7 jours, visant à concevoir, simuler et documenter une architecture réseau sécurisée pour une PME en déménagement.
