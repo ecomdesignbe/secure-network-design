@@ -14,7 +14,7 @@ Inter-VLAN communication will be controlled using Layer 3 routing and Access Con
 
 | Department                 | VLAN ID | Subnet            | Gateway        | Estimated Hosts |
 |----------------------------|---------|-------------------|----------------|-----------------|
-| Management % Secretariat   | 10      | 192.168.10.0/24   | 192.168.10.1   | 5               |
+| Management & Secretariat   | 10      | 192.168.10.0/24   | 192.168.10.1   | 5               |
 | Study Area                 | 20      | 192.168.20.0/24   | 192.168.20.1   | 8               |
 | Production                 | 30      | 192.168.30.0/24   | 192.168.30.1   | 10              |
 | Support 1                  | 40      | 192.168.40.0/24   | 192.168.40.1   | 10              |
