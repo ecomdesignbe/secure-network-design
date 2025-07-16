@@ -1,0 +1,51 @@
+# DNS Server Setup (Ubuntu/Debian with BIND9)
+# Assumes static IP: 192.168.60.10
+
+# Step 1 – Install BIND9
+sudo apt update
+sudo apt install bind9 -y
+
+# Step 2 – Configure /etc/bind/named.conf.options
+sudo nano /etc/bind/named.conf.options
+
+# Inside the file:
+options {
+    directory "/var/cache/bind";
+    recursion yes;
+    allow-query { any; };
+    listen-on { any; };
+    forwarders {
+        8.8.8.8;
+        1.1.1.1;
+    };
+};
+
+# Step 3 – Configure a local zone
+sudo nano /etc/bind/named.conf.local
+
+# Example zone file
+zone "company.local" {
+    type master;
+    file "/etc/bind/db.company.local";
+};
+
+# Step 4 – Create the zone file
+sudo cp /etc/bind/db.local /etc/bind/db.company.local
+sudo nano /etc/bind/db.company.local
+
+# Sample content
+$TTL 604800
+@   IN  SOA ns.company.local. admin.company.local. (
+        2       ; Serial
+        604800  ; Refresh
+        86400   ; Retry
+        2419200 ; Expire
+        604800 ) ; Negative Cache TTL
+;
+@       IN  NS      ns.company.local.
+ns      IN  A       192.168.60.10
+dhcp    IN  A       192.168.60.11
+iscsi   IN  A       192.168.60.12
+
+# Step 5 – Restart service
+sudo systemctl restart bind9

@@ -1,0 +1,37 @@
+# iSCSI Target Setup (Debian/Ubuntu using targetcli)
+# Assumes static IP: 192.168.60.12
+
+# Step 1 – Install iSCSI target tools
+sudo apt update
+sudo apt install targetcli -y
+
+# Step 2 – Create a backing store (1GB file)
+sudo mkdir -p /iscsi_storage
+sudo dd if=/dev/zero of=/iscsi_storage/disk1.img bs=1M count=1024
+
+# Step 3 – Launch targetcli
+sudo targetcli
+
+# Inside the prompt:
+cd backstores/fileio
+create disk1 /iscsi_storage/disk1.img
+
+cd /iscsi
+create iqn.2025-07.local.company:storage.disk1
+
+cd iqn.2025-07.local.company:storage.disk1/tpg1/luns
+create /backstores/fileio/disk1
+
+cd ../acls
+create iqn.2025-07.client:initiator1
+
+cd iqn.2025-07.client:initiator1
+set auth userid=admin
+set auth password=StrongPass123
+
+cd ..
+exit
+
+# Step 4 – Start and enable the target service
+sudo systemctl enable target
+sudo systemctl start target
