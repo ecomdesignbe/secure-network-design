@@ -1,12 +1,12 @@
 # IP Addressing Plan and VLAN Segmentation
 
-## Project Context
+## 1. Project Context
 
 The client is relocating to a new office and requires a modern, secure, and cost-effective network infrastructure to support its operations. Their previous setup lacks segmentation, centralized management, and proper access control. The new design must ensure secure inter-departmental communication, central authentication, and a robust server infrastructure including DNS, DHCP, RADIUS, and iSCSI services.
 
 The network will be segmented into multiple VLANs to reflect different departments and functions. The design must account for future scalability and ease of maintenance while strictly adhering to security best practices.
 
-## Project Objectives
+## 2. Project Objectives
 
 - Design and simulate a scalable, structured network using GNS3  
 - Implement network segmentation using VLANs and inter-VLAN routing  
@@ -16,7 +16,7 @@ The network will be segmented into multiple VLANs to reflect different departmen
 - Ensure cost-effective equipment selection with proper technical justification  
 - Enable future network growth with minimal disruption
 
-## 1. Design Principles
+## 3. Design Principles
 Each department is assigned its own VLAN and subnet. A /24 subnet is used to:
 - Support current host count comfortably
 - Provide margin for future scalability
@@ -26,7 +26,7 @@ Inter-VLAN communication will be controlled using Layer 3 routing and Access Con
 
 ---
 
-## 2. VLAN and IP Plan
+## 4. VLAN and IP Plan
 
 | Department               | VLAN ID | Subnet          | Gateway        | DHCP Range         | Reserved IPs               |
 |--------------------------|---------|-----------------|----------------|--------------------|----------------------------|
@@ -41,7 +41,7 @@ Inter-VLAN communication will be controlled using Layer 3 routing and Access Con
 
 ---
 
-## 3. Reserved IP Addressing Plan
+## 5. Reserved IP Addressing Plan
 
 | IP Address         | Purpose                      |
 |--------------------|------------------------------|
@@ -55,7 +55,7 @@ Inter-VLAN communication will be controlled using Layer 3 routing and Access Con
 
 ---
 
-## 4. Summary
+## 6. Summary
 
 The addressing and segmentation plan is designed to:
 - Ensure logical separation of network traffic
