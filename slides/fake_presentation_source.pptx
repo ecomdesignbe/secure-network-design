@@ -1,0 +1,132 @@
+Slide 1 – Project Introduction
+Title: Secure Network Design
+Content:
+
+New office setup for a growing company
+
+Full network redesign with a focus on security, scalability, and efficiency
+
+Based on client constraints and best practices
+
+Slide 2 – Project Objectives
+Title: Project Goals
+Bullet Points:
+
+Design a segmented and scalable enterprise network
+
+Implement centralized services (DNS, DHCP, iSCSI)
+
+Introduce strong internal security (DMZ, ACLs, RADIUS)
+
+Ensure cost-effectiveness and future expansion
+
+Slide 3 – Client Requirements
+Title: Client Requirements Overview
+Content:
+
+5 departments: Management, Study, Production, Support A & B
+
+Required services: DNS, DHCP, iSCSI storage
+
+Secure segmentation using VLANs
+
+DMZ implementation (no traditional firewall)
+
+Centralized authentication via RADIUS
+
+GNS3 simulation + documentation + final presentation
+
+Slide 4 – Network Design Summary
+Title: Network Design Overview
+Diagram: Topology overview (screenshot or simplified visual)
+Key Highlights:
+
+6 VLANs: 5 internal + 1 DMZ
+
+Inter-VLAN routing and ACLs on Layer 3 device
+
+All servers placed in a secured DMZ VLAN
+
+iSCSI access restricted to Management only
+
+Slide 5 – IP Addressing & VLANs
+Title: VLAN & IP Planning
+Table Snapshot:
+
+VLAN	Department	Subnet	Reserved IPs
+10	Management	192.168.10.0/24	.1 (gateway), .10 (iSCSI)
+20	Study	192.168.20.0/24	.1 (gateway)
+30	Production	192.168.30.0/24	.1 (gateway)
+40	Support A	192.168.40.0/24	.1 (gateway)
+50	Support B	192.168.50.0/24	.1 (gateway)
+60	DMZ (Servers)	192.168.60.0/24	.10 DNS, .20 DHCP
+
+Slide 6 – Security Strategy Overview
+Title: Core Security Principles
+Bullet Points:
+
+VLAN segmentation to isolate departments
+
+DMZ VLAN for exposed infrastructure
+
+ACLs to strictly control inter-VLAN traffic
+
+Static IPs for all critical assets
+
+Future-proofing with centralized RADIUS
+
+Slide 7 – DMZ Implementation
+Title: DMZ Design & Purpose
+Content:
+
+VLAN 60 contains all core servers
+
+Acts as buffer between user VLANs and infrastructure
+
+Limited access via ACLs:
+
+DNS/DHCP available to all
+
+iSCSI available only to Management
+
+Increases control & reduces attack surface
+
+Slide 8 – Access Control Lists (ACLs)
+Title: Access Control (ACLs)
+Visual: Simple ACL flowchart or text logic
+Key Rules:
+
+All traffic denied by default
+
+Allow DNS (UDP 53), DHCP, iSCSI as needed
+
+No lateral access between user VLANs
+
+Tested via ping/DNS resolution between VLANs
+
+Slide 9 – RADIUS Authentication
+Bullet Points:
+
+RADIUS (Remote Authentication Dial-In User Service) provides centralized authentication for network devices
+
+Configured on switches/routers for both console and VTY (SSH/Telnet) access
+
+Ensures:
+
+Secure admin login with username/password
+
+Centralized control of credentials
+
+Auditing of login attempts
+
+Reduces risk from weak or local-only credentials
+
+Slide 10 – Budget Summary
+Title: Estimated Hardware Budget
+Content:
+
+Overview table (resume)
+
+Total estimated cost: €???
+
+Emphasis on cost-effectiveness + scalability
