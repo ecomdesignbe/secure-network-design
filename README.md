@@ -85,6 +85,9 @@ secure-network-design/
   **Green Team – Antonio & Alexys** *(Security & Documentation)*  
   Responsible for developing the IP addressing table, setting up security features (ACLs, RADIUS, DMZ), writing the documentation, preparing the slides, and selecting appropriate hardware.
 
+<p align="center">
+  <img src="./assets/network-topology.jpg" alt="Network Topology" width="700"/>
+</p>
 
 ---
 
