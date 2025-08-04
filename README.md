@@ -32,38 +32,6 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 
 ## 🗂️ Structure du dépôt / Repository Structure
 
-secure-network-design/
-│
-├── documentation/ # Rapport technique & budget || Technical report & budget
-│ ├── client_requirements.md
-│ ├── network_plan.md
-│ ├── server_configurations.md
-│ ├── security_policy.md
-│ ├── budget_estimate.md
-│ └── project_report.pdf
-│
-├── simulation/ # Fichiers Packet Tracer || Packet Tracer Files
-│ ├── final_project.pkt
-│ ├── topology_diagram.png
-│ └── captures/
-│ └── *.png
-│
-├── slides/ # Présentation finale || Final presentation
-│ ├── presentation_source.pptx
-│ └── presentation.pdf
-│
-├── config_samples/ # Extraits de configuration CLI || CLI configuration snippets
-│ ├── switch_vlan_config.txt
-│ ├── radius_config.txt
-│ └── dns_config.txt
-│
-├── .github/
-│ └── ISSUE_TEMPLATE.md
-│
-├── .gitignore
-├── README.md
-├── LICENSE
-└── CHANGELOG.md
 
 ---
 
