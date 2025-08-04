@@ -32,8 +32,39 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 
 ## 🗂️ Structure du dépôt / Repository Structure
 
+secure-network-design/
+│
+├── documentation/                 # Rapport technique & budget || Technical report & budget
+│   ├── client_requirements.md     # Cahier des charges || Client needs
+│   ├── network_plan.md            # Topologie et plan IP || Network plan
+│   ├── server_configurations.md   # Config serveurs (DNS, DHCP, RADIUS...) || Server setups
+│   ├── security_policy.md         # Politique de sécurité || Security policy
+│   ├── budget_estimate.md         # Estimation budgétaire || Budget estimate
+│   └── project_report.pdf         # Rapport final PDF || Final project report
+│
+├── simulation/                    # Fichiers Packet Tracer || Packet Tracer files
+│   ├── final_project.pkt          # Simulation complète || Full simulation
+│   ├── topology_diagram.png       # Schéma réseau || Network diagram
+│   └── captures/                  # Captures écran annotées || Annotated screenshots
+│       └── *.png
+│
+├── slides/                        # Présentation finale || Final presentation
+│   ├── presentation_source.pptx   # Fichier PowerPoint || PPTX source
+│   └── presentation.pdf           # Version PDF || PDF version
+│
+├── config_samples/               # Extraits de configuration CLI || CLI config snippets
+│   ├── switch_vlan_config.txt     # VLANs & Trunks
+│   ├── radius_config.txt          # Configuration RADIUS
+│   └── dns_config.txt             # Configuration DNS
+│
+├── .github/                      # Fichiers GitHub (issues, workflows…)
+│   └── ISSUE_TEMPLATE.md
+│
+├── .gitignore                    # Fichiers à exclure du dépôt Git
+├── README.md                     # Ce fichier || This file
+├── LICENSE                       # Type de licence du projet
+└── CHANGELOG.md                  # Journal des modifications || Changelog
 
----
 
 ## 👥 Équipe / Team
 
