@@ -31,7 +31,7 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 ---
 
 ## 🗂️ Structure du dépôt / Repository Structure
-
+```
 secure-network-design/
 │
 ├── documentation/                 # Rapport technique & budget || Technical report & budget
@@ -64,7 +64,7 @@ secure-network-design/
 ├── README.md                     # Ce fichier || This file
 ├── LICENSE                       # Type de licence du projet
 └── CHANGELOG.md                  # Journal des modifications || Changelog
-
+```
 
 ## 👥 Équipe / Team
 
