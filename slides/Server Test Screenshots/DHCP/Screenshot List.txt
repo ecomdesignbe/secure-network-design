@@ -1,3 +1,0 @@
-1) DHCP info
-2) DHCP pools
-3) Client that received dynamic IP

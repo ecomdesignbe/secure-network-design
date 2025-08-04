@@ -1,5 +1,0 @@
-0) DNS info
-1) DNS records
-2) nslookp dhcp
-3) nslookup iscsi
-4) nslookup radius
