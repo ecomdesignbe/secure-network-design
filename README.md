@@ -62,21 +62,29 @@ secure-network-design/
 │   ├── iscsi_client_config.txt    # Configuration ISCI CLIENT
 │   └── radius_config.txt          # Configuration RADIUS
 │
-├── .gitignore                    # Fichiers à exclure du dépôt Git
-├── README.md                     # Ce fichier || This file
-├── LICENSE                       # Type de licence du projet
-└── CHANGELOG.md                  # Journal des modifications || Changelog
+├── .gitignore                     # Fichiers à exclure du dépôt Git
+├── README.md                      # Ce fichier || This file
+├── LICENSE                        # Type de licence du projet
+└── CHANGELOG.md                   # Journal des modifications || Changelog
 ```
 
 ## 👥 Équipe / Team
 
-| Nom / Name    |
-|---------------|
-| Alexys        |
-| Antonio       |
-| Jessica       |
-| Steve         |
-| Tommy         |
+- **👤 Chef d’équipe – Steve**  
+  Chargé de la création du Trello, de la gestion des deadlines, de la supervision des livrables finaux et du soutien aux deux équipes.  
+  **Team Leader – Steve**  
+  Responsible for setting up Trello, managing deadlines, overseeing final deliverables, and providing support across both teams.
+
+- **🔵 Équipe Bleue – Jessica & Tommy** *(Topologie & Connectivité)*  
+  Conçoivent la topologie réseau, configurent les VLANs, les adresses IP, les routeurs et les serveurs dans Packet Tracer.  
+  **Blue Team – Jessica & Tommy** *(Topology & Connectivity)*  
+  Tasks include designing the network topology, configuring VLANs, IP addressing, routers, and servers in Packet Tracer.
+
+- **🟢 Équipe Verte – Antonio & Alexys** *(Sécurité & Documentation)*  
+  Responsables du plan d’adressage IP, de la mise en place des éléments de sécurité (ACLs, RADIUS, DMZ), de la rédaction de la documentation, de la présentation et du choix du matériel.  
+  **Green Team – Antonio & Alexys** *(Security & Documentation)*  
+  Responsible for developing the IP addressing table, setting up security features (ACLs, RADIUS, DMZ), writing the documentation, preparing the slides, and selecting appropriate hardware.
+
 
 ---
 
@@ -91,12 +99,12 @@ secure-network-design/
 
 ## 📝 Livrables / Deliverables
 
-- Rapport technique PDF (plan IP, services, sécurité, budget)
-- Fichier de simulation **Packet Tracer**
-- Présentation client (PDF + source)
-- Fichiers de configuration extraits
-- Captures d’écran annotées
-- Estimation budgétaire justifiée
+- Rapport technique PDF (plan IP, services, sécurité, budget) | Technical report in PDF (IP plan, services, security, budget)
+- Fichier de simulation **Packet Tracer** | **Packet Tracer** simulation file
+- Présentation client (PDF + source) | Client presentation (PDF + source file)
+- Fichiers de configuration extraits | Extracted configuration files
+- Captures d’écran | Screenshots
+- Estimation budgétaire justifiée | Justified budget estimate
 
 ---
 
