@@ -14,14 +14,14 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 
 ## 🧠 Objectifs / Objectives
 
-**FR 🇫🇷**
+**FR**
 - Concevoir une topologie réseau sécurisée (VLAN, DMZ, ACL, RADIUS, iSCSI…)
 - Simuler l’architecture réseau avec **Packet Tracer**
 - Configurer des services réseau : DHCP, DNS, RADIUS, iSCSI
 - Documenter l’infrastructure et rédiger une présentation client claire
 - Évaluer les coûts matériels
 
-**EN 🇬🇧**
+**EN**
 - Design a secure network topology (VLAN, DMZ, ACL, RADIUS, iSCSI…)
 - Simulate the network using **Packet Tracer**
 - Configure core services: DHCP, DNS, RADIUS, iSCSI
@@ -35,30 +35,32 @@ Project carried out during a 7-day network challenge to design, simulate, and do
 secure-network-design/
 │
 ├── documentation/                 # Rapport technique & budget || Technical report & budget
-│   ├── client_requirements.md     # Cahier des charges || Client needs
+│   ├── goals_and_constraints.md   # Cahier des charges || Client needs
 │   ├── network_plan.md            # Topologie et plan IP || Network plan
 │   ├── server_configurations.md   # Config serveurs (DNS, DHCP, RADIUS...) || Server setups
 │   ├── security_policy.md         # Politique de sécurité || Security policy
-│   ├── budget_estimate.md         # Estimation budgétaire || Budget estimate
-│   └── project_report.pdf         # Rapport final PDF || Final project report
+│   └── budget_estimate.md         # Estimation budgétaire || Budget estimate
+│   
 │
 ├── simulation/                    # Fichiers Packet Tracer || Packet Tracer files
 │   ├── final_project.pkt          # Simulation complète || Full simulation
 │   ├── topology_diagram.png       # Schéma réseau || Network diagram
-│   └── captures/                  # Captures écran annotées || Annotated screenshots
-│       └── *.png
+│   └── captures/                  # Captures écran || Screenshots
+│       └── DHCP                   # Captures écran || Screenshots DHCP
+│       └── DNS                    # Captures écran || Screenshots DNS
+│       └── ISCSI                  # Captures écran || Screenshots ISCSI
+│       └── RADIUS SERVER          # Captures écran || Screenshots RADIUS SERVER  
 │
 ├── slides/                        # Présentation finale || Final presentation
 │   ├── presentation_source.pptx   # Fichier PowerPoint || PPTX source
-│   └── presentation.pdf           # Version PDF || PDF version
+│   └── Network Project Slides.pdf # Version PDF || PDF version
 │
-├── config_samples/               # Extraits de configuration CLI || CLI config snippets
-│   ├── switch_vlan_config.txt     # VLANs & Trunks
-│   ├── radius_config.txt          # Configuration RADIUS
-│   └── dns_config.txt             # Configuration DNS
-│
-├── .github/                      # Fichiers GitHub (issues, workflows…)
-│   └── ISSUE_TEMPLATE.md
+├── config_samples/                # Extraits de configuration CLI || CLI config snippets
+│   ├── dhcp_config.txt            # Configuration DHCP
+│   ├── dns_config.txt             # Configuration DNS
+│   ├── isci_config.txt            # Configuration ISCI
+│   ├── iscsi_client_config.txt    # Configuration ISCI CLIENT
+│   └── radius_config.txt          # Configuration RADIUS
 │
 ├── .gitignore                    # Fichiers à exclure du dépôt Git
 ├── README.md                     # Ce fichier || This file
