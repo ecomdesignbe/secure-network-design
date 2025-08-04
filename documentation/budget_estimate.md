@@ -1,64 +1,50 @@
-# BUDGET MANAGEMENT REPORT (First Step)
+# **Budget Management Report (First Step)**
 
-## SWITCHES
+## **Switches**
+- **Cisco Catalyst C1000-24T-4G** (24-port Gigabit Ethernet, STP) – *Approx. €500*
+- **Cisco C9200 24P-E** (24-port Gigabit Ethernet, 4x1G SFP) – *Approx. €800*
 
-- **Cisco CBS250-24T-4G** (24 ports Gigabit Ethernet, STP) – ~€300  
-- **Cisco CBS350-24T-4G** (24 ports Gigabit Ethernet, 4x1G SFP) – ~€600  
+## **Servers**
+- **iSCSI Server** – HPE ProLiant ML30 Gen11 – *Approx. €1,300*
+- **RADIUS Server** – Dell PowerEdge T140 – *Approx. €700*
+- **DHCP Server** – Dell PowerEdge T140 / HPE ML30 Gen11 – *Approx. €700*
+- **DNS Server** – Dell PowerEdge T140 / HPE ML30 Gen11 – *Approx. €700*
 
----
+## **Router**
+- **Cisco 4331** – *Approx. €900*  
+  *Ideal for all-Cisco environments. Offers robust routing capabilities, though at a higher cost.*
 
-## SERVERS
-
-- **iSCSI Server** – HPE ProLiant ML30 Gen11 – ~€1300  
-- **RADIUS Server** – Dell PowerEdge T140 – ~€700  
-- **DHCP Server** – Dell PowerEdge T140 / HPE ML30 Gen11 – ~€700  
-- **DNS Server** – Dell PowerEdge T140 / HPE ML30 Gen11 – ~€700  
-
----
-
-## ROUTERS (Choose one based on context)
-
-- **Ubiquiti EdgeRouter 6P** – ~€200  
-  _Widely used in small and medium businesses. Very cost-efficient and supports VLANs._
-
-- **Cisco ISR 1010** – ~€900  
-  _Works best in an all-Cisco setup. Offers strong routing capabilities but is more expensive._
-
-- **No router needed** – ~€0  
-  _In many cases, a separate router is unnecessary. VLAN routing can be handled by Layer 3 switches, and security by the Cisco Firepower firewall — resulting in simpler design and cost savings._
+## **Firewall**
+- **Cisco Firepower 1010** – *Approx. €1,500*  
+  *Advanced firewall solution. Requires additional licenses for features such as URL filtering, intrusion prevention, and malware protection.*
 
 ---
 
-## FIREWALL
+## **Hardware Cost Breakdown**
 
-- **Cisco Firepower 1010** – ~€1500  
-  _Advanced firewall solution. Requires additional licenses for features such as URL filtering, intrusion prevention, and malware protection._
-
----
-
-## COST BREAKDOWN
-
-| Category   | Item                                   | Qty | Unit Price | Total   |
-|------------|----------------------------------------|-----|------------|---------|
-| **Switches** | Cisco CBS250-24T-4G (Access Switches) | 4   | €300       | €1,200  |
-|            | Cisco CBS350-24T-4G (Core Switch)      | 1   | €600       | €600    |
-| **Servers** | iSCSI Server – HPE ProLiant ML30 G11   | 1   | €1,300     | €1,300  |
-|            | RADIUS Server – Dell PowerEdge T140    | 1   | €700       | €700    |
-|            | DHCP Server – Dell T140 / HPE ML30 G11 | 1   | €700       | €700    |
-|            | DNS Server – Dell T140 / HPE ML30 G11  | 1   | €700       | €700    |
-| **Router**  | Ubiquiti EdgeRouter 6P                 | 1   | €200       | €200    |
-| **Firewall**| Cisco Firepower 1010                   | 1   | €1,500     | €1,500  |
-
-### **TOTAL ESTIMATED COST**  
-**€6,900**
+| **Category** | **Item**                              | **Qty** | **Unit Price** | **Total** |
+|--------------|----------------------------------------|--------:|----------------:|----------:|
+| Switches     | Cisco Catalyst C1000 (Access Switches) |       4 | €500            | €2,000    |
+|              | Cisco C9200 24P-E (Core Switch)        |       1 | €800            | €800      |
+| Servers      | iSCSI Server – HPE ML30 Gen11          |       1 | €1,300          | €1,300    |
+|              | RADIUS Server – Dell T140              |       1 | €700            | €700      |
+|              | DHCP Server – Dell T140 / HPE ML30     |       1 | €700            | €700      |
+|              | DNS Server – Dell T140 / HPE ML30      |       1 | €700            | €700      |
+| Router       | Cisco 4331                             |       1 | €900            | €900      |
+| Firewall     | Cisco Firepower 1010                   |       1 | €1,500          | €1,500    |
+|              | **Total Estimated Cost**               |         |                 | **€8,600** |
 
 ---
 
-## Cost Optimization Tip
+## **Cost Optimization Tips**
 
-It is possible to significantly reduce overall costs by reusing existing servers or network hardware where appropriate.
+- **Reuse Existing Equipment**: Reusing available servers or switches can significantly cut costs, especially for testing, early deployment, or non-critical services.
+- **Consider Refurbished Hardware**: Mid-range servers and network devices are often available at 60–80% discounts in the refurbished market.
+- **Key Considerations for Refurbished Equipment**:
+  - Ensure firmware compatibility and vendor support.
+  - Confirm warranty coverage.
+  - Test all components in a lab environment prior to production deployment.
 
-- Some components (such as switches or mid-range servers) can be found in used or refurbished condition at a lower price from trusted suppliers.  
-- This is particularly useful for lab setups, non-critical services, or in early modernization phases.  
-- However, be sure to verify warranty, firmware compatibility, and support when opting for reused equipment.
+### **Refurbished Cost Estimate (Most Cost-Efficient Approach)**
 
+By utilizing refurbished equipment from reputable sources (**Cisco Refresh**, certified resellers), you can potentially reduce the total setup cost from **€8,600** to approximately **€3,000**, without compromising on reliability—ideal for small to medium-sized businesses.
