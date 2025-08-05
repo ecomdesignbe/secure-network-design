@@ -54,7 +54,7 @@ secure-network-design/
 │       └── DHCP                   # Captures écran || Screenshots DHCP
 │       └── DNS                    # Captures écran || Screenshots DNS
 │       └── ISCSI                  # Captures écran || Screenshots ISCSI
-│       └── RADIUS SERVER          # Captures écran || Screenshots RADIUS SERVER  
+│       └── RADIUS SERVER          # Captures écran || Screenshots RADIUS SERVER (DOESN'T WORK)
 │
 ├── slides/                        # Présentation finale || Final presentation
 │   └── Network Project Slides.pdf # Version PDF || PDF version
@@ -62,9 +62,9 @@ secure-network-design/
 ├── config_samples/                # Extraits de configuration CLI || CLI config snippets
 │   ├── dhcp_config.txt            # Configuration DHCP
 │   ├── dns_config.txt             # Configuration DNS
-│   ├── isci_config.txt            # Configuration ISCI
-│   ├── iscsi_client_config.txt    # Configuration ISCI CLIENT
-│   └── radius_config.txt          # Configuration RADIUS
+│   ├── isci_config.txt            # Configuration ISCSI
+│   ├── iscsi_client_config.txt    # Configuration ISCSI CLIENT
+│   └── radius_config.txt          # Configuration RADIUS (DOESN'T WORK)
 │
 ├── .gitignore                     # Fichiers à exclure du dépôt Git
 ├── README.md                      # Ce fichier || This file
@@ -117,8 +117,7 @@ secure-network-design/
 
 ## 🚧 En cours / Work In Progress
 
-Ce dépôt est activement mis à jour pendant la durée du challenge.  
-This repository is actively updated during the challenge.
+- RADIUS ne fonctionne pas !!! | RADIUS DOESN'T WORK
 
 ---
 
