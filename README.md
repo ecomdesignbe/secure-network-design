@@ -7,10 +7,10 @@
 Projet réalisé dans le cadre d’un challenge réseau de 7 jours, visant à concevoir, simuler et documenter une architecture réseau sécurisée pour une PME en déménagement.
 
 > 💡 Ce projet a été entièrement simulé avec **Cisco Packet Tracer**. 
-> 
-> 💡 This project was fully simulated with **Cisco Packet Tracer**.
 
 Project carried out during a 7-day network challenge to design, simulate, and document a secure network architecture for a small business relocating its IT infrastructure.
+
+> 💡 This project was fully simulated with **Cisco Packet Tracer**.
 
 📄 [Challenge](https://github.com/ecomdesignbe/secure-network-design/blob/main/Establish_A_Network_Plan.md)
 
